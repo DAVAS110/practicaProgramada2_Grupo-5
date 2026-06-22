@@ -1,11 +1,8 @@
 package com.fidelitas.java.practicaprogramada2_grupo5;
 
-
- // Clase abstracta que define los atributos comunes de un producto
- 
 public abstract class ProductoBase {
 
-    private final String codigo; // atributo final
+    private final String codigo;
     private String nombre;
     private double precio;
     private int cantidad;
@@ -45,7 +42,6 @@ public abstract class ProductoBase {
         this.cantidad = cantidad;
     }
 
-    // Método abstracto: cada subclase decide cómo calcular el precio final
     public abstract double getPrecioFinal();
 
     @Override

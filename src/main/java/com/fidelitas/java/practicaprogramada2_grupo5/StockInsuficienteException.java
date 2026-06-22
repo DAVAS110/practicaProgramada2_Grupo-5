@@ -1,8 +1,6 @@
 package com.fidelitas.java.practicaprogramada2_grupo5;
 
- // Se lanza cuando se intenta vender/retirar más cantidad de la disponible en stock
- 
-public class StockInsuficienteException extends Exception {
+public class StockInsuficienteException extends RuntimeException {
 
     public StockInsuficienteException(String mensaje) {
         super(mensaje);
